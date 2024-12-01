@@ -3,7 +3,7 @@
 This repository contains a template for a ROS package to be forked.
 
 
-## Build the forked ROS package
+### Build the forked ROS package
 
 ```
 docker compose up
