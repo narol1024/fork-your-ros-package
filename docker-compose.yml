@@ -1,0 +1,13 @@
+services:
+  ros_aarch64:
+    image: arm64v8/ros:humble
+    volumes:
+      - ./:/root/ros_ws
+    working_dir: /root/ros_ws
+    command: /bin/sh -c /root/ros_ws/scripts/build.sh
+  ros_x86:
+    image: osrf/ros:humble-desktop
+    volumes:
+      - ./:/root/ros_ws
+    working_dir: /root/ros_ws
+    command: /bin/sh -c /root/ros_ws/scripts/build.sh
